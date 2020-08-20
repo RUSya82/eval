@@ -1,0 +1,992 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="container">
+            <div class="header__background">
+                <div class="header__bright"></div>
+                <div class="header__wrapper">
+
+                    <a href="/" class="logo"><img src="../img/logo/header__logo.png" alt="logo"></a>
+                    <h1 class="header__h1 site-h1">
+                        Турецкое агентство недвижимости EVAL
+                    </h1>
+                    <div class="header__p site-h2">
+                        <p>Продажа квартир, вилл, отелей, участков земли в городах: Анталья, Кемер, Белек, Алания и
+                            других популярных местах Анталийского региона</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main-content">
+        <div class="container">
+            <div class="form-wrapper">
+                <form action="search_result.html" class="site-form">
+                    <div class="__select site-select " data-state="">
+                        <div class="__select__title" data-default="type_of_realty">Тип недвижимости</div>
+                        <div class="__select__content">
+                            <input id="flat" class="__select__input" type="radio" name="type_of_realty" value="flat"/>
+                            <label for="flat" class="__select__label">Квартира</label>
+                            <input id="villa" class="__select__input" type="radio" name="type_of_realty" value="villa"/>
+                            <label for="villa" class="__select__label">Вилла</label>
+                            <input id="land" class="__select__input" type="radio" name="type_of_realty" value="land"/>
+                            <label for="land" class="__select__label">Участок земли</label>
+                            <input id="commerse" class="__select__input" type="radio" name="type_of_realty"
+                                   value="commerse"/>
+                            <label for="commerse" class="__select__label">Коммерческая</label>
+                            <input id="business" class="__select__input" type="radio" name="type_of_realty"
+                                   value="business"/>
+                            <label for="business" class="__select__label">Бизнес</label>
+                            <input id="pit" class="__select__input" type="radio" name="type_of_realty" value="pit"/>
+                            <label for="pit" class="__select__label">Котлован</label>
+                        </div>
+                    </div>
+                    <div class="__select site-select " data-state="">
+                        <div class="__select__title" data-default="type_of_deal">Тип сделки</div>
+                        <div class="__select__content">
+                            <input id="singleSelect0" class="__select__input" type="radio" name="type_of_deal"
+                                   value="buy"/>
+                            <label for="singleSelect0" class="__select__label">Покупка</label>
+                            <input id="singleSelect1" class="__select__input" type="radio" name="type_of_deal"
+                                   value="rent"/>
+                            <label for="singleSelect1" class="__select__label">Аренда</label>
+                            <input id="singleSelect2" class="__select__input" type="radio" name="type_of_deal"
+                                   value="season_rent"/>
+                            <label for="singleSelect2" class="__select__label">Сезонная аренда</label>
+                        </div>
+                    </div>
+                    <div class="__select site-select " data-state="">
+                        <div class="__select__title" data-default="city">Город</div>
+                        <div class="__select__content">
+                            <input id="alanya" class="__select__input" type="radio" name="city" value="alanya"/>
+                            <label for="alanya" class="__select__label">Алания</label>
+                            <input id="antalya" class="__select__input" type="radio" name="city" value="antalya"/>
+                            <label for="antalya" class="__select__label">Анталия</label>
+                            <input id="kemer" class="__select__input" type="radio" name="city" value="kemer"/>
+                            <label for="kemer" class="__select__label">Кемер</label>
+                            <input id="side" class="__select__input" type="radio" name="city" value="side"/>
+                            <label for="side" class="__select__label">Сиде</label>
+
+                        </div>
+                    </div>
+                    <button class="search-form__button site-button">Поиск</button>
+                </form>
+            </div>
+            <div class="result-container">
+                <div class="result-container__prev-button">
+                    <a href="/"><img src="img/icons/less.svg" alt=""> <span>Назад</span></a>
+                </div>
+                <div class="result-contaner__header">
+                    <h3 class="site-h3">Результаты поиска (111 объявлений)</h3>
+                </div>
+                <div class="result-container__to-map">
+                    <a href="search_result_map.html">Посмотреть на карте</a>
+                </div>
+                <div class="result-container__body">
+                    <div class="result-item__wrapper">
+                        <a class="slider__item result__item" href="#">
+                            <div class="item-image">
+                                <img src="img/slider/slider_1.jpg" alt="">
+                            </div>
+                            <div class="item-text card-title "><p>Четырехкомнатная квартира с видом на море </p>
+                            </div>
+                            <footer class="slider__footer">
+                                <div class="slider__city">
+                                    Лиман, Анталья
+                                </div>
+                                <div class="slider__price">
+                                    $87600
+                                </div>
+                            </footer>
+                        </a>
+                    </div>
+                    <div class="result-item__wrapper">
+                        <a class="slider__item result__item" href="#">
+                            <div class="item-image">
+                                <img src="img/slider/slider_1.jpg" alt="">
+                            </div>
+                            <div class="item-text card-title "><p>Четырехкомнатная квартира с видом на море </p>
+                            </div>
+                            <footer class="slider__footer">
+                                <div class="slider__city">
+                                    Лиман, Анталья
+                                </div>
+                                <div class="slider__price">
+                                    $87600
+                                </div>
+                            </footer>
+                        </a>
+                    </div>
+                    <div class="result-item__wrapper">
+                        <a class="slider__item result__item" href="#">
+                            <div class="item-image">
+                                <img src="img/slider/slider_1.jpg" alt="">
+                            </div>
+                            <div class="item-text card-title"><p>Четырехкомнатная квартира с видом на море </p>
+                            </div>
+                            <footer class="slider__footer">
+                                <div class="slider__city">
+                                    Лиман, Анталья
+                                </div>
+                                <div class="slider__price">
+                                    $87600
+                                </div>
+                            </footer>
+                        </a>
+                    </div>
+                    <div class="result-item__wrapper">
+                        <a class="slider__item result__item" href="#">
+                            <div class="item-image">
+                                <img src="img/slider/slider_1.jpg" alt="">
+                            </div>
+                            <div class="item-text card-title"><p>Четырехкомнатная квартира с видом на море </p>
+                            </div>
+                            <footer class="slider__footer">
+                                <div class="slider__city">
+                                    Лиман, Анталья
+                                </div>
+                                <div class="slider__price">
+                                    $87600
+                                </div>
+                            </footer>
+                        </a>
+                    </div>
+                    <div class="result-item__wrapper">
+                        <a class="slider__item result__item" href="#">
+                            <div class="item-image">
+                                <img src="img/slider/slider_1.jpg" alt="">
+                            </div>
+                            <div class="item-text  card-title"><p>Четырехкомнатная квартира с видом на море </p>
+                            </div>
+                            <footer class="slider__footer">
+                                <div class="slider__city">
+                                    Лиман, Анталья
+                                </div>
+                                <div class="slider__price">
+                                    $87600
+                                </div>
+                            </footer>
+                        </a>
+                    </div>
+                    <div class="result-item__wrapper">
+                        <a class="slider__item result__item" href="#">
+                            <div class="item-image">
+                                <img src="img/slider/slider_1.jpg" alt="">
+                            </div>
+                            <div class="item-text title card-title"><p>Четырехкомнатная квартира с видом на море </p>
+                            </div>
+                            <footer class="slider__footer">
+                                <div class="slider__city">
+                                    Лиман, Анталья
+                                </div>
+                                <div class="slider__price">
+                                    $87600
+                                </div>
+                            </footer>
+                        </a>
+                    </div>
+                    <div class="result-item__wrapper">
+                        <a class="slider__item result__item" href="#">
+                            <div class="item-image">
+                                <img src="img/slider/slider_1.jpg" alt="">
+                            </div>
+                            <div class="item-text  card-title"><p>Четырехкомнатная квартира с видом на море </p>
+                            </div>
+                            <footer class="slider__footer">
+                                <div class="slider__city">
+                                    Лиман, Анталья
+                                </div>
+                                <div class="slider__price">
+                                    $87600
+                                </div>
+                            </footer>
+                        </a>
+                    </div>
+                    <div class="result-item__wrapper">
+                        <a class="slider__item result__item" href="#">
+                            <div class="item-image">
+                                <img src="img/slider/slider_1.jpg" alt="">
+                            </div>
+                            <div class="item-text  card-title"><p>Четырехкомнатная квартира с видом на море </p>
+                            </div>
+                            <footer class="slider__footer">
+                                <div class="slider__city">
+                                    Лиман, Анталья
+                                </div>
+                                <div class="slider__price">
+                                    $87600
+                                </div>
+                            </footer>
+                        </a>
+                    </div>
+                    <div class="result-item__wrapper">
+                        <a class="slider__item result__item" href="#">
+                            <div class="item-image">
+                                <img src="img/slider/slider_1.jpg" alt="">
+                            </div>
+                            <div class="item-text card-title card-title"><p>Четырехкомнатная квартира с видом на море </p>
+                            </div>
+                            <footer class="slider__footer">
+                                <div class="slider__city">
+                                    Лиман, Анталья
+                                </div>
+                                <div class="slider__price">
+                                    $87600
+                                </div>
+                            </footer>
+                        </a>
+                    </div>
+                    <div class="result-item__wrapper">
+                        <a class="slider__item result__item" href="#">
+                            <div class="item-image">
+                                <img src="img/slider/slider_1.jpg" alt="">
+                            </div>
+                            <div class="item-text  card-title"><p>Четырехкомнатная квартира с видом на море </p>
+                            </div>
+                            <footer class="slider__footer">
+                                <div class="slider__city">
+                                    Лиман, Анталья
+                                </div>
+                                <div class="slider__price">
+                                    $87600
+                                </div>
+                            </footer>
+                        </a>
+                    </div>
+                    <div class="result-item__wrapper">
+                        <a class="slider__item result__item" href="#">
+                            <div class="item-image">
+                                <img src="img/slider/slider_1.jpg" alt="">
+                            </div>
+                            <div class="item-text  card-title"><p>Четырехкомнатная квартира с видом на море </p>
+                            </div>
+                            <footer class="slider__footer">
+                                <div class="slider__city">
+                                    Лиман, Анталья
+                                </div>
+                                <div class="slider__price">
+                                    $87600
+                                </div>
+                            </footer>
+                        </a>
+                    </div>
+                    <div class="result-item__wrapper">
+                        <a class="slider__item result__item" href="#">
+                            <div class="item-image">
+                                <img src="img/slider/slider_1.jpg" alt="">
+                            </div>
+                            <div class="item-text card-title"><p>Четырехкомнатная квартира с видом на море </p>
+                            </div>
+                            <footer class="slider__footer">
+                                <div class="slider__city">
+                                    Лиман, Анталья
+                                </div>
+                                <div class="slider__price">
+                                    $87600
+                                </div>
+                            </footer>
+                        </a>
+                    </div>
+                    <div class="result-item__wrapper">
+                        <a class="slider__item result__item" href="#">
+                            <div class="item-image">
+                                <img src="img/slider/slider_1.jpg" alt="">
+                            </div>
+                            <div class="item-text card-title"><p>Четырехкомнатная квартира с видом на море </p>
+                            </div>
+                            <footer class="slider__footer">
+                                <div class="slider__city">
+                                    Лиман, Анталья
+                                </div>
+                                <div class="slider__price">
+                                    $87600
+                                </div>
+                            </footer>
+                        </a>
+                    </div>
+                    <div class="result-item__wrapper">
+                        <a class="slider__item result__item" href="#">
+                            <div class="item-image">
+                                <img src="img/slider/slider_1.jpg" alt="">
+                            </div>
+                            <div class="item-text card-title"><p>Четырехкомнатная квартира с видом на море </p>
+                            </div>
+                            <footer class="slider__footer">
+                                <div class="slider__city">
+                                    Лиман, Анталья
+                                </div>
+                                <div class="slider__price">
+                                    $87600
+                                </div>
+                            </footer>
+                        </a>
+                    </div>
+                    <div class="result-item__wrapper">
+                        <a class="slider__item result__item" href="#">
+                            <div class="item-image">
+                                <img src="img/slider/slider_1.jpg" alt="">
+                            </div>
+                            <div class="item-text card-title"><p>Четырехкомнатная квартира с видом на море </p>
+                            </div>
+                            <footer class="slider__footer">
+                                <div class="slider__city">
+                                    Лиман, Анталья
+                                </div>
+                                <div class="slider__price">
+                                    $87600
+                                </div>
+                            </footer>
+                        </a>
+                    </div>
+                    <div class="result-item__wrapper">
+                        <a class="slider__item result__item" href="#">
+                            <div class="item-image">
+                                <img src="img/slider/slider_1.jpg" alt="">
+                            </div>
+                            <div class="item-text card-title"><p>Четырехкомнатная квартира с видом на море </p>
+                            </div>
+                            <footer class="slider__footer">
+                                <div class="slider__city">
+                                    Лиман, Анталья
+                                </div>
+                                <div class="slider__price">
+                                    $87600
+                                </div>
+                            </footer>
+                        </a>
+                    </div>
+                    <div class="result-item__wrapper">
+                        <a class="slider__item result__item" href="#">
+                            <div class="item-image">
+                                <img src="img/slider/slider_1.jpg" alt="">
+                            </div>
+                            <div class="item-text card-title"><p>Четырехкомнатная квартира с видом на море </p>
+                            </div>
+                            <footer class="slider__footer">
+                                <div class="slider__city">
+                                    Лиман, Анталья
+                                </div>
+                                <div class="slider__price">
+                                    $87600
+                                </div>
+                            </footer>
+                        </a>
+                    </div>
+                    <div class="result-item__wrapper">
+                        <a class="slider__item result__item" href="#">
+                            <div class="item-image">
+                                <img src="img/slider/slider_1.jpg" alt="">
+                            </div>
+                            <div class="item-text card-title"><p>Четырехкомнатная квартира с видом на море </p>
+                            </div>
+                            <footer class="slider__footer">
+                                <div class="slider__city">
+                                    Лиман, Анталья
+                                </div>
+                                <div class="slider__price">
+                                    $87600
+                                </div>
+                            </footer>
+                        </a>
+                    </div>
+                    <div class="result-item__wrapper">
+                        <a class="slider__item result__item" href="#">
+                            <div class="item-image">
+                                <img src="img/slider/slider_1.jpg" alt="">
+                            </div>
+                            <div class="item-text card-title"><p>Четырехкомнатная квартира с видом на море </p>
+                            </div>
+                            <footer class="slider__footer">
+                                <div class="slider__city">
+                                    Лиман, Анталья
+                                </div>
+                                <div class="slider__price">
+                                    $87600
+                                </div>
+                            </footer>
+                        </a>
+                    </div>
+                    <div class="result-item__wrapper">
+                        <a class="slider__item result__item" href="#">
+                            <div class="item-image">
+                                <img src="img/slider/slider_1.jpg" alt="">
+                            </div>
+                            <div class="item-text card-title"><p>Четырехкомнатная квартира с видом на море </p>
+                            </div>
+                            <footer class="slider__footer">
+                                <div class="slider__city">
+                                    Лиман, Анталья
+                                </div>
+                                <div class="slider__price">
+                                    $87600
+                                </div>
+                            </footer>
+                        </a>
+                    </div>
+                    <div class="result-item__wrapper">
+                        <a class="slider__item result__item" href="#">
+                            <div class="item-image">
+                                <img src="img/slider/slider_1.jpg" alt="">
+                            </div>
+                            <div class="item-text card-title"><p>Четырехкомнатная квартира с видом на море </p>
+                            </div>
+                            <footer class="slider__footer">
+                                <div class="slider__city">
+                                    Лиман, Анталья
+                                </div>
+                                <div class="slider__price">
+                                    $87600
+                                </div>
+                            </footer>
+                        </a>
+                    </div>
+                    <div class="result-item__wrapper">
+                        <a class="slider__item result__item" href="#">
+                            <div class="item-image">
+                                <img src="img/slider/slider_1.jpg" alt="">
+                            </div>
+                            <div class="item-text card-title"><p>Четырехкомнатная квартира с видом на море </p>
+                            </div>
+                            <footer class="slider__footer">
+                                <div class="slider__city">
+                                    Лиман, Анталья
+                                </div>
+                                <div class="slider__price">
+                                    $87600
+                                </div>
+                            </footer>
+                        </a>
+                    </div>
+                    <div class="result-item__wrapper">
+                        <a class="slider__item result__item" href="#">
+                            <div class="item-image">
+                                <img src="img/slider/slider_1.jpg" alt="">
+                            </div>
+                            <div class="item-text card-title"><p>Четырехкомнатная квартира с видом на море </p>
+                            </div>
+                            <footer class="slider__footer">
+                                <div class="slider__city">
+                                    Лиман, Анталья
+                                </div>
+                                <div class="slider__price">
+                                    $87600
+                                </div>
+                            </footer>
+                        </a>
+                    </div>
+                    <div class="result-item__wrapper">
+                        <a class="slider__item result__item" href="#">
+                            <div class="item-image">
+                                <img src="img/slider/slider_1.jpg" alt="">
+                            </div>
+                            <div class="item-text card-title"><p>Четырехкомнатная квартира с видом на море </p>
+                            </div>
+                            <footer class="slider__footer">
+                                <div class="slider__city">
+                                    Лиман, Анталья
+                                </div>
+                                <div class="slider__price">
+                                    $87600
+                                </div>
+                            </footer>
+                        </a>
+                    </div>
+                    <div class="result-item__wrapper">
+                        <a class="slider__item result__item" href="#">
+                            <div class="item-image">
+                                <img src="img/slider/slider_1.jpg" alt="">
+                            </div>
+                            <div class="item-text card-title"><p>Четырехкомнатная квартира с видом на море </p>
+                            </div>
+                            <footer class="slider__footer">
+                                <div class="slider__city">
+                                    Лиман, Анталья
+                                </div>
+                                <div class="slider__price">
+                                    $87600
+                                </div>
+                            </footer>
+                        </a>
+                    </div>
+                    <div class="result-item__wrapper">
+                        <a class="slider__item result__item" href="#">
+                            <div class="item-image">
+                                <img src="img/slider/slider_1.jpg" alt="">
+                            </div>
+                            <div class="item-text card-title"><p>Четырехкомнатная квартира с видом на море </p>
+                            </div>
+                            <footer class="slider__footer">
+                                <div class="slider__city">
+                                    Лиман, Анталья
+                                </div>
+                                <div class="slider__price">
+                                    $87600
+                                </div>
+                            </footer>
+                        </a>
+                    </div>
+                    <div class="result-item__wrapper">
+                        <a class="slider__item result__item" href="#">
+                            <div class="item-image">
+                                <img src="img/slider/slider_1.jpg" alt="">
+                            </div>
+                            <div class="item-text card-title"><p>Четырехкомнатная квартира с видом на море </p>
+                            </div>
+                            <footer class="slider__footer">
+                                <div class="slider__city">
+                                    Лиман, Анталья
+                                </div>
+                                <div class="slider__price">
+                                    $87600
+                                </div>
+                            </footer>
+                        </a>
+                    </div>
+                    <div class="result-item__wrapper">
+                        <a class="slider__item result__item" href="#">
+                            <div class="item-image">
+                                <img src="img/slider/slider_1.jpg" alt="">
+                            </div>
+                            <div class="item-text card-title"><p>Четырехкомнатная квартира с видом на море </p>
+                            </div>
+                            <footer class="slider__footer">
+                                <div class="slider__city">
+                                    Лиман, Анталья
+                                </div>
+                                <div class="slider__price">
+                                    $87600
+                                </div>
+                            </footer>
+                        </a>
+                    </div>
+                    <div class="result-item__wrapper">
+                        <a class="slider__item result__item" href="#">
+                            <div class="item-image">
+                                <img src="img/slider/slider_1.jpg" alt="">
+                            </div>
+                            <div class="item-text card-title"><p>Четырехкомнатная квартира с видом на море </p>
+                            </div>
+                            <footer class="slider__footer">
+                                <div class="slider__city">
+                                    Лиман, Анталья
+                                </div>
+                                <div class="slider__price">
+                                    $87600
+                                </div>
+                            </footer>
+                        </a>
+                    </div>
+                    <div class="result-item__wrapper">
+                        <a class="slider__item result__item" href="#">
+                            <div class="item-image">
+                                <img src="img/slider/slider_1.jpg" alt="">
+                            </div>
+                            <div class="item-text card-title"><p>Четырехкомнатная квартира с видом на море </p>
+                            </div>
+                            <footer class="slider__footer">
+                                <div class="slider__city">
+                                    Лиман, Анталья
+                                </div>
+                                <div class="slider__price">
+                                    $87600
+                                </div>
+                            </footer>
+                        </a>
+                    </div>
+                    <div class="result-item__wrapper">
+                        <a class="slider__item result__item" href="#">
+                            <div class="item-image">
+                                <img src="img/slider/slider_1.jpg" alt="">
+                            </div>
+                            <div class="item-text card-title"><p>Четырехкомнатная квартира с видом на море </p>
+                            </div>
+                            <footer class="slider__footer">
+                                <div class="slider__city">
+                                    Лиман, Анталья
+                                </div>
+                                <div class="slider__price">
+                                    $87600
+                                </div>
+                            </footer>
+                        </a>
+                    </div>
+                    <div class="result-item__wrapper">
+                        <a class="slider__item result__item" href="#">
+                            <div class="item-image">
+                                <img src="img/slider/slider_1.jpg" alt="">
+                            </div>
+                            <div class="item-text card-title"><p>Четырехкомнатная квартира с видом на море </p>
+                            </div>
+                            <footer class="slider__footer">
+                                <div class="slider__city">
+                                    Лиман, Анталья
+                                </div>
+                                <div class="slider__price">
+                                    $87600
+                                </div>
+                            </footer>
+                        </a>
+                    </div>
+                    <div class="result-item__wrapper">
+                        <a class="slider__item result__item" href="#">
+                            <div class="item-image">
+                                <img src="img/slider/slider_1.jpg" alt="">
+                            </div>
+                            <div class="item-text card-title"><p>Четырехкомнатная квартира с видом на море </p>
+                            </div>
+                            <footer class="slider__footer">
+                                <div class="slider__city">
+                                    Лиман, Анталья
+                                </div>
+                                <div class="slider__price">
+                                    $87600
+                                </div>
+                            </footer>
+                        </a>
+                    </div>
+                    <div class="result-item__wrapper">
+                        <a class="slider__item result__item" href="#">
+                            <div class="item-image">
+                                <img src="img/slider/slider_1.jpg" alt="">
+                            </div>
+                            <div class="item-text card-title"><p>Четырехкомнатная квартира с видом на море </p>
+                            </div>
+                            <footer class="slider__footer">
+                                <div class="slider__city">
+                                    Лиман, Анталья
+                                </div>
+                                <div class="slider__price">
+                                    $87600
+                                </div>
+                            </footer>
+                        </a>
+                    </div>
+                    <div class="result-item__wrapper">
+                        <a class="slider__item result__item" href="#">
+                            <div class="item-image">
+                                <img src="img/slider/slider_1.jpg" alt="">
+                            </div>
+                            <div class="item-text card-title"><p>Четырехкомнатная квартира с видом на море </p>
+                            </div>
+                            <footer class="slider__footer">
+                                <div class="slider__city">
+                                    Лиман, Анталья
+                                </div>
+                                <div class="slider__price">
+                                    $87600
+                                </div>
+                            </footer>
+                        </a>
+                    </div>
+                    <div class="result-item__wrapper">
+                        <a class="slider__item result__item" href="#">
+                            <div class="item-image">
+                                <img src="img/slider/slider_1.jpg" alt="">
+                            </div>
+                            <div class="item-text card-title"><p>Четырехкомнатная квартира с видом на море </p>
+                            </div>
+                            <footer class="slider__footer">
+                                <div class="slider__city">
+                                    Лиман, Анталья
+                                </div>
+                                <div class="slider__price">
+                                    $87600
+                                </div>
+                            </footer>
+                        </a>
+                    </div>
+                    <div class="result-item__wrapper">
+                        <a class="slider__item result__item" href="#">
+                            <div class="item-image">
+                                <img src="img/slider/slider_1.jpg" alt="">
+                            </div>
+                            <div class="item-text card-title"><p>Четырехкомнатная квартира с видом на море </p>
+                            </div>
+                            <footer class="slider__footer">
+                                <div class="slider__city">
+                                    Лиман, Анталья
+                                </div>
+                                <div class="slider__price">
+                                    $87600
+                                </div>
+                            </footer>
+                        </a>
+                    </div>
+                    <div class="result-item__wrapper">
+                        <a class="slider__item result__item" href="#">
+                            <div class="item-image">
+                                <img src="img/slider/slider_1.jpg" alt="">
+                            </div>
+                            <div class="item-text card-title"><p>Четырехкомнатная квартира с видом на море </p>
+                            </div>
+                            <footer class="slider__footer">
+                                <div class="slider__city">
+                                    Лиман, Анталья
+                                </div>
+                                <div class="slider__price">
+                                    $87600
+                                </div>
+                            </footer>
+                        </a>
+                    </div>
+                    <div class="result-item__wrapper">
+                        <a class="slider__item result__item" href="#">
+                            <div class="item-image">
+                                <img src="img/slider/slider_1.jpg" alt="">
+                            </div>
+                            <div class="item-text card-title"><p>Четырехкомнатная квартира с видом на море </p>
+                            </div>
+                            <footer class="slider__footer">
+                                <div class="slider__city">
+                                    Лиман, Анталья
+                                </div>
+                                <div class="slider__price">
+                                    $87600
+                                </div>
+                            </footer>
+                        </a>
+                    </div>
+                    <div class="result-item__wrapper">
+                        <a class="slider__item result__item" href="#">
+                            <div class="item-image">
+                                <img src="img/slider/slider_1.jpg" alt="">
+                            </div>
+                            <div class="item-text card-title"><p>Четырехкомнатная квартира с видом на море </p>
+                            </div>
+                            <footer class="slider__footer">
+                                <div class="slider__city">
+                                    Лиман, Анталья
+                                </div>
+                                <div class="slider__price">
+                                    $87600
+                                </div>
+                            </footer>
+                        </a>
+                    </div>
+                </div>
+                    <button class="result-container__button site-button">
+                        Далее
+                    </button>
+            </div>
+
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer_container">
+                    <div class="footer__header">
+                        <p>Контакты</p>
+                    </div>
+                    <div class="footer__contacts">
+                        <div class="contacts-left">
+                            <div class="contact-item">
+                                <div class="contact__item-header">
+                                    <p>Контакты</p>
+                                </div>
+                                <div class="contact__item-content">
+                                    <p>evalrealt@gmail.com</p>
+                                    <p> +90 (544) 625 43 27</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact__item-header">
+                                    <p>Адрес</p>
+                                </div>
+                                <div class="contact__item-content">
+                                    <p>Анталья, Коньяалты, Лиман</p>
+                                    <p> 21 улица., д.6</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contacts-right">
+                            <div class="contact-item contact-item-right">
+                                <div class="contact__item-header">
+                                    <p>График работы</p>
+                                </div>
+                                <div class="contact__item-content shedule-flex">
+                                    <div class="shedule-item">
+                                        <p>понедельник - пятница</p>
+                                        <p> 10:00 до 18:00</p>
+                                    </div>
+                                    <div class="shedule-item">
+                                        <p>суббота</p>
+                                        <p>11:00 до 16:00</p>
+                                    </div>
+                                    <div class="shedule-item">
+                                        <p>воскресенье</p>
+                                        <p> выходной</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d949.2043110894258!2d30.617345508392994!3d36.84894167232886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14c393e2c3823501%3A0xd42e8579d23e536b!2zTGltYW4sIDIxLiBTay4sIDA3MTMwIEtvbnlhYWx0xLEvQW50YWx5YSwg0KLRg9GA0YbQuNGP!5e0!3m2!1sru!2sru!4v1596219337539!5m2!1sru!2sru" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                    <div class="footer__end">
+                        <div class="do-you-want">
+                            <a href="#" class="do-you-want_a">Хотите разместить объявление?</a>
+                        </div>
+                        <div class="footer__socials">
+                            <a href="#"><img src="img/icons/telegram.svg" alt=""></a>
+                            <a href="#"><img src="img/icons/youtube.svg" alt=""></a>
+                            <a href="#"><img src="img/icons/whatsapp.svg" alt=""></a>
+                        </div>
+                        <div class="footer__copyright">
+                            <p>&copy;<span>EVAL</span> - недвижимость</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<div class="popup-fade  modal-search-fade">
+    <div class="modal site-modal modal-alone modal-search">
+        <div class="modal__wrapper">
+            <!--        <button class="modal__arrow-prev"></button>-->
+            <!--        <button class="modal__arrow-next"></button>-->
+
+            <div class="modal__content-wrapper">
+                <a class="modal__close-btn"></a>
+                <div class="modal__container">
+                    <div class="modal__header">
+                        <h3 class="site-h3">Квартиры. Анталья</h3>
+                    </div>
+                    <div class="modal__description-header phone_header">
+                        <p>Четырехкомнатная квартира с видом на море</p>
+                    </div>
+                    <div class="modal__main-content">
+                        <div class="main-slider-wrapper">
+                            <div class="modal__sliders">
+                                <div class="modal__slider-big">
+                                    <div class="slider-big__item">
+                                        <img src="img/images/modal-slider_0.jpg" alt="">
+                                    </div>
+                                    <div class="slider-big__item">
+                                        <img src="img/images/modal-slider_0.jpg" alt="">
+                                    </div>
+                                    <div class="slider-big__item">
+                                        <img src="img/images/modal-slider_0.jpg" alt="">
+                                    </div>
+                                    <div class="slider-big__item">
+                                        <img src="img/images/modal-slider_0.jpg" alt="">
+                                    </div>
+                                    <div class="slider-big__item">
+                                        <img src="img/images/modal-slider_0.jpg" alt="">
+                                    </div>
+                                    <div class="slider-big__item">
+                                        <img src="img/images/modal-slider_0.jpg" alt="">
+                                    </div>
+                                    <div class="slider-big__item">
+                                        <img src="img/images/modal-slider_0.jpg" alt="">
+                                    </div>
+                                    <div class="slider-big__item">
+                                        <img src="img/images/modal-slider_0.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="modal__slider-small">
+                                    <div class="slider-small__item">
+                                        <img src="img/images/modal_slider-min-item.jpg" alt="">
+                                    </div>
+                                    <div class="slider-small__item">
+                                        <img src="img/images/modal_slider-min-item.jpg" alt="">
+                                    </div>
+                                    <div class="slider-small__item">
+                                        <img src="img/images/modal_slider-min-item.jpg" alt="">
+                                    </div>
+                                    <div class="slider-small__item">
+                                        <img src="img/images/modal_slider-min-item.jpg" alt="">
+                                    </div>
+                                    <div class="slider-small__item">
+                                        <img src="img/images/modal_slider-min-item.jpg" alt="">
+                                    </div>
+                                    <div class="slider-small__item">
+                                        <img src="img/images/modal_slider-min-item.jpg" alt="">
+                                    </div>
+                                    <div class="slider-small__item">
+                                        <img src="img/images/modal_slider-min-item.jpg" alt="">
+                                    </div>
+                                    <div class="slider-small__item">
+                                        <img src="img/images/modal_slider-min-item.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal__description">
+                                <div class="modal__description-header pc_header">
+                                    <p>Четырехкомнатная квартира с видом на море</p>
+                                </div>
+                                <div class="modal__description-price">
+                                    <p>€87 500.00</p>
+                                </div>
+                                <div class="modal__description-specif">
+                                    <p><span>Тип:</span> Квартира</p>
+                                    <p><span>Количество комнат:</span> 4</p>
+                                    <p><span>Общая площадь:</span> 120 м2</p>
+                                </div>
+                                <div class="modal__description-main">
+                                    <p>Из окон квартиры и балкона открывается прекрасный вид на море и на район Лиман. Территория комплекса огорожена. Есть газовое отопление с климат контролем, кондиционирование воздуха (Daikin) высокоскоростной интернет. Квартира продается с мебелью и высококлассной бытовой техникой.</p>
+                                </div>
+                                <button class="site-button order-button">Заказать просмотр</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="go-to-map">
+                        <a href="#">Посмотреть на карте</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<div class="popup-fade modal-thanks__fade">
+    <div class="modal-thanks site-modal">
+        <div class="modal__wrapper modal-thanks__wrapper">
+            <a href="#" class="modal__close-btn"></a>
+            <h3 class="site-h3 modal-thanks__header">Спасибо за заявку!</h3>
+            <p class="card-title">В ближайшее время наш менеджер с Вами свяжется</p>
+        </div>
+    </div>
+</div>
+<div class="popup-fade new-ad-fade">
+    <div class="new-ad site-modal">
+        <div class="new-ad__wrapper">
+            <a href="#" class="modal__close-btn"></a>
+            <div class="new-ad__content">
+                <h3 class="site-h3 new-ad__header">Хотите разместить свое объявление?</h3>
+                <p class="new-ad__text">
+                    Если Вы хотите разместить свое объявлние о продаже у нас на сайте, то напишите нам на почту evalrealt@gmail.com или оставьте свои контакты, чтобы мы с Вами связались.
+                </p>
+            </div>
+            <form class="feedback__form site-form" action="#">
+                <input type="text" class="site-select feedback__input" placeholder="Имя" name="name">
+                <input type="email" class="site-select feedback__input" placeholder="Почта" name="email">
+                <input type="text" class="site-select feedback__input" placeholder="Телефон" name="phone">
+                <button class="site-button feedback__button">Заказать</button>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- Подключаем jQuery -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<!--  Подключаем слайдер Slick -->
+<script src="js/slick.min.js"></script>
+<!--  Подключаем файл скриптов -->
+<script src="js/slider.js"></script>
+<script src="js/select.js"></script>
+</body>
+</html>
