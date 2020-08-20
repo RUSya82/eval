@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        body{
+            background-color: #E5E5E5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="request site-modal">
+        <div class="request__wrapper">
+            <a href="#" class="modal__close-btn"></a>
+            <h3 class="site-h3">Оставить заявку</h3>
+            <form action="#" class="request__form">
+                <input type="text" name="request__name" class="request__input" placeholder="Имя">
+                <input type="text" name="request__phone" class="request__input" placeholder="Телефон">
+                <input type="text" name="request__email" class="request__input" placeholder="Почта">
+                <label class="request__consent">
+                    <input type="checkbox" class="consent-checkbox_hidden" checked name="consent">
+                    <span class="consent-checkbox"></span>
+                    Соглашаюсь на обработку моих персональных данных
+                </label>
+                <button class="site-button request__send" >Отправить</button>
+            </form>
+        </div>
+
+    </div>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<!--  Подключаем слайдер Slick -->
+<script src="js/slick.min.js"></script>
+<!--  Подключаем файл скриптов -->
+<script src="js/slider.js"></script>
+<script src="js/select.js"></script>
+</body>
+</html>
