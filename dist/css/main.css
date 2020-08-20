@@ -1122,7 +1122,8 @@ button {
   flex-direction: column;
   align-items: center;
   font-family: "Roboto", sans-serif;
-  padding-bottom: 73px; }
+  padding-bottom: 73px;
+  margin-top: 25px; }
   @media screen and (max-width: 600px) {
     .result-container {
       width: 100%; } }
@@ -1145,7 +1146,7 @@ button {
   @media screen and (max-width: 600px) {
     .result-contaner__header {
       margin: 0;
-      max-width: 90%;
+      max-width: 250px;
       line-height: 240%;
       text-align: center; } }
 
@@ -1175,10 +1176,12 @@ button {
 .result__item {
   max-width: 315px;
   min-width: 25%; }
+  @media screen and (max-width: 600px) {
+    .result__item {
+      width: 250px; } }
 
 .result-item__wrapper {
   margin: 0 10px 80px 10px;
-  flex: 0 1 23%;
   max-width: 325px;
   min-width: 250px;
   display: flex;

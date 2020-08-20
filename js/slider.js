@@ -3,6 +3,20 @@ $(document).ready(function(){
     let body = $('body');
     let scroll = calcScroll();
 
+    let fade = $('.modal-recomended-fade');
+    let popup_fade = $('.popup_fade');
+    let modal = $('.modal-recomended');
+    let modal_close = $('.modal__close-btn');
+    let modal_alone = $('.modal-alone');
+    let modal_search_fade = $('.modal-search-fade');
+    let modal_thanks = $('.modal-thanks');
+    let modal_thanks_fade = $('.modal-thanks__fade');
+    let new_ad_modal = $('.new-ad');
+    let new_ad_fade = $('.new-ad-fade');
+    let request_modal = $('.request__modal');
+    let request_fade = $('.request__fade');
+    let order_button = $('.order-button');
+
     function calcScroll(){
         let div = document.createElement('div');
         div.style.width = '500px';
@@ -60,6 +74,10 @@ $(document).ready(function(){
             ]
         });
     })
+
+    /**
+     * Функция инициализации слайдеров в модальных окнах с рекомендациями
+     */
     function initSliders(){
             $('.modal__slider-big').slick({
                 arrows:false, //стрелки
@@ -124,8 +142,6 @@ $(document).ready(function(){
 
     }
     function showModal(modal, fade){
-
-
         body.css('margin-right', scroll + 'px');
         body.css('width', 'auto');
         body.addClass('hidden');
@@ -134,30 +150,9 @@ $(document).ready(function(){
         modal.fadeIn();
         fade.css('display', 'flex');
 
-        let winH = $(window).height();
-        let modalH = modal.height();
-        if(modalH > winH){
-            fade.css('align-items', 'flex-start');
-        }else{
-            fade.css('align-items', 'center');
-        }
     }
 
-    let fade = $('.modal-recomended-fade');
-    let popup_fade = $('.popup_fade');
-    console.dir(popup_fade);
-    let modal = $('.modal-recomended');
-    let modal_close = $('.modal__close-btn');
-    let modal_alone = $('.modal-alone');
-    let modal_search_fade = $('.modal-search-fade');
-    let modal_thanks = $('.modal-thanks');
-    let modal_thanks_fade = $('.modal-thanks__fade');
-    let new_ad_modal = $('.new-ad');
-    let new_ad_fade = $('.new-ad-fade');
-    let request_modal = $('.request__modal');
-    let request_fade = $('.request__fade');
-    let order_button = $('.order-button');
-    console.dir(order_button);
+
 
     $('.slider_recomended').each(function (node) {
         $(this).click(function (e) {
@@ -186,7 +181,6 @@ $(document).ready(function(){
                 return false
         });
     });
-
 
     $('.do-you-want_a').click(function (e) {
         //e.preventDefault();
@@ -219,7 +213,7 @@ $(document).ready(function(){
             p.then(() => {
                 initSliders();
                 let winH = $(window).height();
-                let modalH = modal.height();
+                let modalH = modal_alone.height();
                 if(modalH > winH){
                     modal_search_fade.css('align-items', 'flex-start');
                 }else{
