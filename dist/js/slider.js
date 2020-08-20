@@ -157,6 +157,7 @@ $(document).ready(function(){
     let request_modal = $('.request__modal');
     let request_fade = $('.request__fade');
     let order_button = $('.order-button');
+    console.dir(order_button);
 
     $('.slider_recomended').each(function (node) {
         $(this).click(function (e) {
@@ -186,21 +187,7 @@ $(document).ready(function(){
         });
     });
 
-    order_button.click(function (e) {
-        let current_modal = $(e.target).closest('.site-modal');
-        let current_fade = current_modal.closest('.popup-fade');
-        closeModal(current_modal,current_fade);
-        if(current_modal.find('.slick-initialized').length !== 0){
-            uninitSliders();
-        }
-        showModal(request_modal,request_fade);
-        request_fade.click(function(e) {
-            if($(e.target).closest(request_modal).length === 0){
-                closeModal(request_modal,request_fade);
-            }
-        });
-        return false;
-    });
+
     $('.do-you-want_a').click(function (e) {
         //e.preventDefault();
         showModal(new_ad_modal,new_ad_fade);
@@ -251,6 +238,21 @@ $(document).ready(function(){
         });
     });
 
+    order_button.click(function (e) {
+        let current_modal = $(e.target).closest('.site-modal');
+        let current_fade = current_modal.closest('.popup-fade');
+        closeModal(current_modal,current_fade);
+        if(current_modal.find('.slick-initialized').length !== 0){
+            uninitSliders();
+        }
+        showModal(request_modal,request_fade);
+        request_fade.click(function(e) {
+            if($(e.target).closest(request_modal).length === 0){
+                closeModal(request_modal,request_fade);
+            }
+        });
+        return false;
+    });
 
     modal_close.click(function (e) {
         let current_modal = $(e.target).closest('.site-modal');
