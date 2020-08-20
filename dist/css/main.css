@@ -318,11 +318,7 @@ button {
   position: relative;
   display: flex;
   justify-content: center;
-  padding: 2.688rem 7.93rem 1rem 7.93rem; }
-  @media screen and (max-width: 1023px) {
-    .modal__content-wrapper {
-      padding-right: 3rem;
-      padding-left: 3rem; } }
+  padding: 43px 90px 16px 90px; }
   @media screen and (max-width: 600px) {
     .modal__content-wrapper {
       padding: 43px 15px 20px 15px; } }
@@ -330,7 +326,8 @@ button {
 .modal__container {
   display: flex;
   flex-direction: column;
-  width: 100%; }
+  width: 100%;
+  max-width: 913px; }
 
 .modal__header {
   width: 100%; }
@@ -494,13 +491,13 @@ button {
     left: 30px; }
     @media screen and (max-width: 600px) {
       .modal__slider-small .modal__arrow-prev {
-        left: 15px; } }
+        left: 8px; } }
   .modal__slider-small .modal__arrow-next {
     background: #DD5D3E url(../img/icons/modal_next.svg) 12px 8px no-repeat;
     right: 30px; }
     @media screen and (max-width: 600px) {
       .modal__slider-small .modal__arrow-next {
-        right: 15px; } }
+        right: 9px; } }
   .modal__slider-small .slick-slider {
     min-width: 0; }
   .modal__slider-small .slick-list {
