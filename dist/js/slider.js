@@ -199,7 +199,7 @@ $(document).ready(function(){
         return false;
     });
 
-    $('.feedback__button').click(function (e) {
+    $('.order-view__button').click(function (e) {
         //e.preventDefault();
         showModal(modal_thanks,modal_thanks_fade);
         modal_thanks_fade.click(function(e) {
