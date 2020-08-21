@@ -255,6 +255,7 @@ $(document).ready(function(){
         if(current_modal.find('.slick-initialized').length !== 0){
             uninitSliders();
         }
+        return false;
     });
 
     // Закрытие по клавише Esc.

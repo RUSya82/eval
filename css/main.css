@@ -88,7 +88,7 @@ html {
 
 .site-h1 {
   font-weight: bold;
-  font-size: 2.5rem;
+  font-size: 40px;
   color: #FFFFFF;
   font-family: "Roboto", sans-serif; }
   @media screen and (max-width: 600px) {
@@ -138,7 +138,8 @@ html {
   width: 100%;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
-  color: #9F9F9F; }
+  color: #9F9F9F;
+  max-width: 1124px; }
   @media screen and (max-width: 600px) {
     .site-form {
       flex-direction: column;
@@ -185,7 +186,9 @@ html {
   background-color: #FFFFFF;
   border-radius: 20px;
   font-family: "Roboto", sans-serif;
-  z-index: 9999; }
+  z-index: 9999;
+  margin-top: 20px;
+  margin-bottom: 20px; }
 
 .popup-fade {
   display: none;
@@ -691,11 +694,12 @@ button {
   color: #9F9F9F; }
 
 .form-wrapper {
-  max-width: 1124px;
   width: 100%;
-  padding: 0 30px;
+  padding: 0 15px;
   position: relative;
-  top: -31.5px; }
+  top: -31.5px;
+  display: flex;
+  justify-content: center; }
   @media screen and (max-width: 600px) {
     .form-wrapper {
       top: -111px; } }
@@ -788,8 +792,8 @@ button {
   height: 100%; }
 
 .feedback {
-  max-width: 1125px;
-  min-width: 78%;
+  width: 100%;
+  padding: 0 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -996,7 +1000,8 @@ button {
       .footer .footer__wrapper {
         padding: 0; } }
   .footer .footer_container {
-    width: 76.11%;
+    width: 90%;
+    max-width: 1136px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1006,7 +1011,7 @@ button {
         padding: 23px 0 30px 0;
         width: 100%; } }
   .footer .footer__header {
-    font-size: 1.5625rem; }
+    font-size: 25px; }
 
 .footer__contacts {
   width: 100%;
@@ -1032,11 +1037,9 @@ button {
       align-items: center;
       margin-right: 0; } }
 
-.contacts-right {
-  flex: 1 1 auto; }
-  @media screen and (max-width: 600px) {
-    .contacts-right {
-      flex-direction: column; } }
+@media screen and (max-width: 600px) {
+  .contacts-right {
+    flex-direction: column; } }
 
 .contact-item {
   width: 222px;
@@ -1051,12 +1054,12 @@ button {
 
 .contact__item-header {
   font-weight: bold;
-  font-size: 1.25rem;
+  font-size: 20px;
   margin-bottom: 10px; }
 
 .contact__item-content {
   font-weight: normal;
-  font-size: 1rem;
+  font-size: 16px;
   line-height: 165%; }
 
 .shedule-flex {
@@ -1086,7 +1089,7 @@ button {
   justify-content: space-between;
   width: 100%;
   margin-top: 32px;
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 500; }
   @media screen and (max-width: 600px) {
     .footer__end {
@@ -1122,7 +1125,8 @@ button {
   flex-direction: column;
   align-items: center;
   font-family: "Roboto", sans-serif;
-  padding-bottom: 73px; }
+  padding-bottom: 73px;
+  margin-top: 25px; }
   @media screen and (max-width: 600px) {
     .result-container {
       width: 100%; } }
@@ -1145,7 +1149,7 @@ button {
   @media screen and (max-width: 600px) {
     .result-contaner__header {
       margin: 0;
-      max-width: 90%;
+      max-width: 250px;
       line-height: 240%;
       text-align: center; } }
 
@@ -1175,10 +1179,12 @@ button {
 .result__item {
   max-width: 315px;
   min-width: 25%; }
+  @media screen and (max-width: 600px) {
+    .result__item {
+      width: 250px; } }
 
 .result-item__wrapper {
   margin: 0 10px 80px 10px;
-  flex: 0 1 23%;
   max-width: 325px;
   min-width: 250px;
   display: flex;
@@ -1219,6 +1225,8 @@ button {
   z-index: 9999; }
   .modal-thanks .modal-thanks__wrapper {
     align-items: center;
-    padding: 55px 30px 66px 30px; }
+    padding: 55px 30px 66px 30px;
+    text-align: center;
+    line-height: 150%; }
     .modal-thanks .modal-thanks__wrapper p {
       margin-top: 26px; }
