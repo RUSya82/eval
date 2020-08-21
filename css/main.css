@@ -154,7 +154,10 @@ html {
   font-family: "Roboto", sans-serif;
   color: #9F9F9F;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
-  max-width: 275px; }
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+  max-width: 275px;
+  -webkit-appearance: none; }
   @media screen and (max-width: 600px) {
     .site-select {
       width: 275px;
@@ -162,7 +165,9 @@ html {
       margin-bottom: 15px;
       font-size: 18px;
       margin-right: 0;
-      box-shadow: 0 0 8px rgba(0, 0, 0, 0.25); } }
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+      -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+      -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.25); } }
 
 .site-button {
   border-radius: 15px;
@@ -617,11 +622,7 @@ button {
   margin-top: 20px; }
 
 .header {
-  font-family: 'Roboto', sans-serif !important;
-  height: 707px; }
-  @media screen and (max-width: 600px) {
-    .header {
-      height: 533px; } }
+  font-family: 'Roboto', sans-serif !important; }
 
 .header__background {
   width: 100%;
