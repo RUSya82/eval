@@ -138,99 +138,54 @@ $(document).ready(function(){
         modalName.hide();
         body.css('margin-right', '0px');
         body.removeClass('hidden');
-        body.css('width', '100%');
 
     }
     function showModal(modal, fade){
         body.css('margin-right', scroll + 'px');
-        body.css('width', 'auto');
         body.addClass('hidden');
-
-        fade.fadeIn();
-        modal.fadeIn();
         fade.css('display', 'flex');
-
+        modal.fadeIn();
     }
 
-
-
-    $('.slider_recomended').each(function (node) {
-        $(this).click(function (e) {
-            let p = new Promise(function (resolve, reject) {
-                showModal(modal, fade);
-                body.css('margin-right', scroll + 'px');
-                resolve();
-            });
-            p.then(() => {
-                initSliders();
-                let winH = $(window).height();
-                let modalH = modal.height();
-                if(modalH > winH){
-                    fade.css('align-items', 'flex-start');
-                }else{
-                    fade.css('align-items', 'center');
-                }
-            }).then(() => {
-                fade.click(function(e) {
-                    if($(e.target).closest(modal).length === 0){
-                        closeModal(modal,fade);
+    /**
+     * Функция расчета размера модального окна и размера экрана
+     * и расчета css свойства align-items для модалки
+     * @param modal
+     * @returns {string} flex-start или center
+     */
+    function getFadeFlex(modal){
+        let winH = $(window).height();
+        let modalH = modal.height();
+        return (modalH > winH) ? 'flex-start' : 'center';
+    }
+    function bindModal(triggerSelector, modalSelector, fadeSelector, sliders){
+        let trigger = $(triggerSelector);
+        let modal = $(modalSelector);
+        let fade = $(fadeSelector);
+        trigger.click(async function (e) {
+            e.preventDefault();
+            await showModal(modal, fade);
+            if(sliders){
+                await initSliders();
+            }
+            fade.css('align-items', getFadeFlex(modal));
+            fade.click(function (e) {
+                if($(e.target).closest(modal).length === 0){
+                    closeModal(modal,fade);
+                    if(sliders){
                         uninitSliders();
                     }
-                });
-            });
-                return false
-        });
-    });
-
-    $('.do-you-want_a').click(function (e) {
-        //e.preventDefault();
-        showModal(new_ad_modal,new_ad_fade);
-        new_ad_fade.click(function(e) {
-            if($(e.target).closest(new_ad_modal).length === 0){
-                closeModal(new_ad_modal,new_ad_fade);
-            }
-        });
-        return false;
-    });
-
-    $('.order-view__button').click(function (e) {
-        //e.preventDefault();
-        showModal(modal_thanks,modal_thanks_fade);
-        modal_thanks_fade.click(function(e) {
-            if($(e.target).closest(modal_thanks).length === 0){
-                closeModal(modal_thanks,modal_thanks_fade);
-            }
-        });
-        return false;
-    })
-
-    $('.result__item').each(function (node) {
-        $(this).click(function (e) {
-            let p = new Promise(function (resolve, reject) {
-                showModal(modal_alone, modal_search_fade);
-                resolve();
-            });
-            p.then(() => {
-                initSliders();
-                let winH = $(window).height();
-                let modalH = modal_alone.height();
-                if(modalH > winH){
-                    modal_search_fade.css('align-items', 'flex-start');
-                }else{
-                    modal_search_fade.css('align-items', 'center');
                 }
-            }).then(() => {
-                modal_search_fade.click(function(e) {
-                    if($(e.target).closest(modal_alone).length === 0){
-                        closeModal(modal_alone,modal_search_fade);
-                        uninitSliders();
-                    }
-                });
+                return false;
             });
-                return false
+            return false;
+        })
+    }
 
-        });
-    });
+    bindModal('.do-you-want_a', new_ad_modal, new_ad_fade, false);
+    bindModal('.order-view__button', modal_thanks, modal_thanks_fade, false);
+    bindModal('.result__item', modal_alone, modal_search_fade, true);
+    bindModal('.slider_recomended', modal, fade, true);
 
     order_button.click(function (e) {
         let current_modal = $(e.target).closest('.site-modal');
@@ -269,6 +224,5 @@ $(document).ready(function(){
             closeModal(current_modal,current_fade);
         }
     });
-
 
 });
